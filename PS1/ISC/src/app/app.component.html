@@ -1,0 +1,25 @@
+<div class="outer">
+  <div class="example-container mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="roll">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center; width: 33.33%;"> Roll </th>
+      <td mat-cell *matCellDef="let element" style="text-align: center; width: 33.33%;"> {{element.roll}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="_id">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center; width: 33.33%;"> ID </th>
+      <td mat-cell *matCellDef="let element" style="text-align: center; width: 33.33%;"> {{element._id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center; width: 33.33%;"> Name </th>
+      <td mat-cell *matCellDef="let element" style="text-align: center; width: 33.33%;"> {{element.name}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true" style="font-size: larger;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+</div>
+

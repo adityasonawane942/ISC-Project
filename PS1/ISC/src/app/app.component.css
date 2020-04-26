@@ -1,0 +1,48 @@
+.example-container {
+    height: 400px;
+    overflow: auto;
+    -ms-overflow-style: none;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+  .outer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 70%;
+    box-shadow: lightseagreen 0px 0px 20px 5px;
+  }
+
+  .example-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .mat-row {
+    background-color: lightblue;
+    transition: ease 1s;
+    font-weight: 500;
+  }
+
+  .mat-row:hover {
+    background-color: whitesmoke;
+    transition: ease;
+  }
+
+  .mat-header-cell {
+    color: blue;
+    font-size: large;
+    background-color: black;
+  }
+
+  @media screen and (max-width: 500px) {
+    .mat-cell {
+      font-size: 3vw;
+    }
+
+    .mat-header-cell {
+      font-size: small;
+    }
+  }
